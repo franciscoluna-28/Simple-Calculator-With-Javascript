@@ -1,0 +1,65 @@
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat";
+            box-sizing: border-box
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #002147
+        }
+        
+        .calculator {
+            position: relative;
+            display: grid
+        }
+        
+        .calculator .value {
+            grid-column: span 4;
+            height: 100px;
+            text-align: right;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 18px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px
+        }
+        
+        .calculator span {
+            display: grid;
+            width: 80px;
+            height: 60px;
+            color: white;
+            background: #3A6289;
+            place-items: center;
+            border: 1px solid rgba(0, 0, 0, .1)
+        }
+        
+        .calculator span:active {
+            background: rgb(144, 238, 144);
+            color: #111
+        }
+        
+        .calculator span.clear {
+            grid-column: span 2;
+            width: 160px;
+            background-color: #49C5DD
+        }
+        
+        .calculator span.equality {
+            background-color: #EE3D97;
+            grid-column: span 2;
+            grid-row: span 6;
+            width: 160px;
+        }
+        
+        .calculator span.sum {
+            grid-row: span 2;
+            height: 120px;
+        }
